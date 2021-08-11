@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(37, 36, 36);
+    color: white;
+}
+
+.imagen{
+    max-width: 100%;
+}
+
+.boton{
+    width: 100%;
+}
+
+.modal{
+    top:25%
+}
+
+.formularioTarjeta{
+    max-width: 400px
+}
+
+.fotoPelicula{
+    display: flex;
+    justify-content: center;
+    }
+
+.formularioDescripcionPelicula{
+    display: none;
+}
+
+@media screen and (min-width: 426px) {
+    .formularioDescripcionPelicula{
+        display: block;
+    }
+    .botonComprar{
+        display: none;
+    }
+    .fotoPelicula{
+    justify-content: start;
+    }
+    .descripcionPelicula{
+        display: none;
+    }
+  }
