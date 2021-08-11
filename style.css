@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(37, 36, 36);
+    color: white;
+}
+
+a{
+    list-style: none;
+    color: white;
+}
+
+
+
+/* cards */
+.tituloCard{
+height: 60px;
+}
+
+.imagenCard{
+    max-width: 350px;
+}
