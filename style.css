@@ -3,15 +3,12 @@ body{
     color: white;
 }
 
-.imagenLista{
-    height: 100px ;
+a{
+    list-style: none;
+    color: white;
 }
 
-.articuloLista{
-list-style: none;
-
-}
-
+/*input*/
 input{
     background: transparent;
     border-top: transparent;
@@ -20,20 +17,11 @@ input{
     border-width: 2px ;
     
 }
-
-ul{
-    padding: 0px;
+/* cards */
+.tituloCard{
+height: 60px;
 }
 
-ul li{
-    list-style: none;
-    padding: 0px;
-}
-
-i{
-    color: white;
-}
-
-.boton{
-    max-height: 40px;
+.imagenCard{
+    max-width: 350px;
 }
