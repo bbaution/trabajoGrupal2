@@ -2,3 +2,34 @@ body{
     background-color: rgb(37, 36, 36);
     color: white;
 }
+
+.imagenLista{
+    height: 100px ;
+}
+
+.articuloLista{
+list-style: none;
+
+}
+
+input{
+    background: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-width: 2px ;
+    
+}
+
+ul li{
+    list-style: none;
+    padding: 0px;
+}
+
+i{
+    color: white;
+}
+
+.boton{
+    max-height: 40px;
+}
