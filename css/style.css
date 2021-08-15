@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(37, 36, 36);
+    color: white;
+}
+
+footer
+{
+    margin-top:50px;
+    background-color: rgba(31, 30, 30, 0.466);
+}
+
+a{
+    list-style: none;
+    color: white;
+}
+
+.redes{
+    font-size: 2rem;
+
+}
+
+.redes :hover{
+    color: white;
+    transform: scale(2, 2);
+    transition-duration: 0.39s
+}
+
+/*boton para subir del todo la pagina*/
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#ddc809;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
+/*input*/
+input{
+    background: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-width: 2px ;
+    
+}
+/* cards */
+.tituloCard{
+height: 60px;
+}
+
+.imagenCard{
+    max-width: 350px;
+}
+
+/*media query boton subir al principio de la pag*/
