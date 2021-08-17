@@ -3,6 +3,10 @@ body{
     color: white;
 }
 
+.carrusel{
+    z-index: -1;
+}
+
 footer
 {
     margin-top:50px;
@@ -48,6 +52,15 @@ input{
     border-width: 2px ;
     
 }
+
+.input-vista-adm{
+    display: block;
+}
+
+.busqueda{
+    margin: 0;
+}
+
 /* cards */
 .tituloCard{
 height: 60px;
@@ -57,4 +70,10 @@ height: 60px;
     max-width: 350px;
 }
 
-/*media query boton subir al principio de la pag*/
+/*carrito*/
+
+
+.shopping-cart img{
+    max-height: 30px;
+}
+.comprarButton{}

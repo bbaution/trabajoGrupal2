@@ -12,20 +12,63 @@
     crossorigin="anonymous" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/estilosVistaAdministrador.css">
-  
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
   <title>Hello, world!</title>
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
+  <nav>
+    <div class="logo"><img class="logo-nav" src="../img/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png" alt=""> Rolling Movies</div>
+    <label for="btn" class="icon">
+      <span class="fa fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li>
+        <label for="btn-1" class="show">Features +</label>
+        <a href="./vistaAdministrador.html">Peliculas</a>
+        <input type="checkbox" id="btn-1">
+        <ul>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Elements</a></li>
+          <li><a href="#">Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <label for="btn-2" class="show">Services +</label>
+        <a href="#">Services</a>
+        <input type="checkbox" id="btn-2">
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">App Design</a></li>
+          <li>
+            <label for="btn-3" class="show">More +</label>
+            <a href="#">More <span class="fa fa-plus"></span></a>
+            <input type="checkbox" id="btn-3">
+            <ul>
+              <li><a href="#">Submenu-1</a></li>
+              <li><a href="#">Submenu-2</a></li>
+              <li><a href="#">Submenu-3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
   <main>
     <section>
-      <div class="mb-5 d-flex justify-content-center">
-        <input class="ms-5" type="text">
+      <div class="my-5 d-flex justify-content-center">
+        <input class="ms-5 input-vista-adm" type="text">
         <button type="button" class="btn btn-warning ms-2"><i class="fas fa-search"></i></button>
-        <button type="button" class="btn btn-warning mx-1"><i class="fas fa-plus"></i></i></button>
+        <button type="button" class="btn btn-warning ms-2"><i class="fas fa-plus busqueda"></i></button>
       </div>
     </section>
     <section class="">

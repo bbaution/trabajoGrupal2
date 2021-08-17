@@ -6,20 +6,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rolling movies</title>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="file:///E:/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/proyectogrupal.css">
     <link rel="stylesheet" href="../css/estilosVistaPelicula.css">
     <link rel="stylesheet" href="../css/style.css">
+
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="../css/style3.css">
 </head>
 
 <body class="body">
+    <nav>
+        <div class="logo"><img class="logo-nav" src="../img/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png" alt=""> Rolling Movies</div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">Features +</label>
+                <a href="./vistaAdministrador.html">Peliculas</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Elements</a></li>
+                    <li><a href="#">Icons</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">Services +</label>
+                <a href="./ryf9.html">Services</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart bg-dark">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+
+            <!-- START TOTAL -->
+            <div class="row ">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END TOTAL -->
+
+            <!-- START MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL COMPRA -->
+
+
+        </div>
+
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Ingresar</a></li>
+            <li><a href="./carrito.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
     <!-- Slideshow container -->
-    <div class="slideshow-container">
+    <div class="slideshow-container carrusel">
 
         <!-- Full-width images with number and caption text -->
         <div class="imagenes">
@@ -50,18 +166,26 @@
     <section class="container">
         <h2>Acción</h2>
         <div class="row">
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
+            <div class=" col-12 col-md-4 item shadow mb-4">
+                <div class="tituloCard item-title">
                     <h3>Rapidos y Furiosos 9</h3>
                 </div>
-                <img src="../img/ryf.jpg" class="card-img-top imagenCard" alt="...">
+                <img src="../img/ryf.jpg" class=" item-image card-img-top imagenCard" alt="...">
                 <div class="card-body">
-                    <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#fastModal">
-                        <a href="./ryf9.html">$600</a>
+                    <button type="button" class="btn btn-warning item-button addToCart" data-bs-toggle="modal" data-bs-target="#fastModal">>$600</a>
                     </button>
                 </div>
             </div>
+            <div class="col-12 col-md-6">
+                <div class="item shadow mb-4">
+                    <h3 class="item-title">Rapidos y furiosos 9</h3>
+                    <img class="item-image" src="../img/ryf.jpg">
 
+                    <div class="item-details">
+                        <h4 class="item-price">9.99€</h4>
+                        <button class="item-button btn btn-warning addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
             <div class=" col-12 col-md-4">
                 <div class="tituloCard">
                     <h3>Despierta la Furia</h3>
@@ -108,7 +232,6 @@
                 </div>
             </div>
 
-
             <div class=" col-12 col-md-4">
                 <div class="tituloCard">
                     <h3>La calle del terror</h3>
@@ -121,8 +244,6 @@
                     </button>
                 </div>
             </div>
-
-
 
             <div class=" col-12 col-md-4">
                 <div class="tituloCard">
@@ -435,10 +556,21 @@
                         <button type="submit" class="btn btn-warning text-white">Enviar</button>
                     </div>
                 </form>
-            </div>
+            </div>            
         </section>
-
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="../js/tienda.js"></script>
+    <script src="../js/navbar.js"></script>
     <script src="../js/proyectogrupal.js"></script>
 </body>
 
