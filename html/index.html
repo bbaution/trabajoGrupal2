@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../css/estilosVistaPelicula.css">
     <link rel="stylesheet" href="../css/style.css">
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
     <link rel="stylesheet" href="../css/style3.css">
 </head>
 
@@ -163,6 +163,68 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
     </div>
+
+    <!-- seccion agregar pelicula -->
+        <!-- Grid de bootstrap -->
+        <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-3 d-flex justify-content-end mt-5">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn btn-warning text-white" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-plus"></i>
+                </button>
+      
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <!-- Cuerpo del modal -->
+                      <div class="modal-body">
+                        <!-- Formulario -->
+                        <form id="formulario">
+                          <!-- Input del título -->
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Título</span>
+                            </div>
+                            <input id="titulo" type="text" required placeholder="Title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                          <!-- Input del cuerpo o texto de la noticia -->
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">precio</span>
+                            </div>
+                            <input id="texto" class="form-control" type="number">
+                          </div><br>
+                          <!--Input de la imágen  -->
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Imagen</span>
+                            </div>
+      
+                            <input id="imagen" type="text" required placeholder="Linnk de una imagen" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                          
+      
+                        </form>  
+                        <!-- Final del formulario -->
+                      </div>
+                      <!-- Footer del modal, aquí están los botones -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="agregar()">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
     <section class="container">
         <container id="filas">
 
@@ -577,10 +639,12 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../js/tienda.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../js/tienda.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/proyectogrupal.js"></script>
     <script src="../js/prueba.js"></script>
+    <script src="../js/botonUp.js"></script>
 </body>
 
 </html>
