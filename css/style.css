@@ -1,10 +1,14 @@
 body{
-    background-color: rgb(37, 36, 36);
+    background-color: rgb(19, 18, 18);
     color: white;
 }
 
-.carrusel{
-    z-index: -1;
+.logo{
+    width: fit-content !important;
+}
+
+.logo-nav{
+    height: 50px;
 }
 
 footer
@@ -67,13 +71,40 @@ height: 60px;
 }
 
 .imagenCard{
-    max-width: 350px;
+    max-width: 250px;
 }
 
 /*carrito*/
-
-
-.shopping-cart img{
-    max-height: 30px;
+.shopping-carts{
+    background: rgb(19, 18, 18);
+    position: absolute;
+    top: 100%;
+    
 }
-.comprarButton{}
+
+.imgCarrito{
+    max-width: 50px;
+}
+
+.cardCliente{
+    width: max-content;
+}
+
+.rolling{
+    display: none;
+}
+
+.boton-carrito{
+    display: none;
+}
+
+@media screen and (min-width: 426px) {
+    .shopping-cart{
+        left: -450px;}
+    .rolling{
+        display: block;
+    }
+    .boton-carrito{
+        display: block;
+    }
+}

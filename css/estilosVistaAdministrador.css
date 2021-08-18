@@ -12,6 +12,10 @@ list-style: none;
 
 }
 
+.imagenAdm{
+    max-width: 150px;
+}
+
 input{
     background: transparent;
     border-top: transparent;

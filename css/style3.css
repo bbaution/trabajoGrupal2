@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-.logo-nav{
-  width: 30px;
-}
+
 
 *{
   margin: 0;
@@ -19,6 +17,7 @@ padding: 0px ;
 
 nav{
   background: #1b1b1b;
+  position: relative;
 }
 nav:after{
   content: '';
@@ -27,11 +26,6 @@ nav:after{
 }
 nav .logo{
   float: left;
-  color: white;
-  font-size: 27px;
-  font-weight: 600;
-  line-height: 70px;
-  padding-left: 60px;
 }
 nav ul{
   float: right;

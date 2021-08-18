@@ -1,5 +1,5 @@
-//Declaramos una colección llamda pelicula a la que luego agregaremos objetos que en este caso tomarán el nombre de datosPeliculas.
-let pelicula=[];
+const peliculasJson = localStorage.getItem('peliculas'); // Traer de localStorage el dato asociado a la key "usuarios".
+let pelicula = JSON.parse(peliculasJson) || []; // Convertir datos en formato JSON a código JavaScript.
 
 //Esta función permite agregar pelicula/datosPeliculas(elemento) a la coleción noticias creada al inicio de todo.
 function agregar(){
@@ -24,6 +24,8 @@ function agregar(){
 	//Llamo a la función recorrer para que itere(recorra) la colección(noticias) y las agregue en el html.
 	recorrer();
 	
+	const peliculasJson = JSON.stringify(pelicula); // Convertir datos al formato JSON.
+    localStorage.setItem('peliculas', peliculasJson); // Guardar en localStorage un dato asociado a la key "usuarios".
 }
 
 
@@ -36,30 +38,24 @@ function recorrer(){
 	fila.innerHTML='';
 
 	pelicula.forEach(function(elemento,index){
-		fila.innerHTML +=
-		`
-		<div class="col-12 col-md-6">
-		<div class="item shadow mb-4">
-		<h3 class="item-title">${elemento.Título}</h3>
-		<img class="item-image" src=${elemento.Img}>
+		fila.innerHTML +=`
+	
+		<div class="row shoppingCartItem">
+		<div class="col-4 d-flex">
+		<div class="shopping-cart-item item shadow mb-4">
+		<img class="item-image shopping-cart-image imagenAdm" src=${elemento.Img}>
+		<h3 class="item-title shoppingCartItemTitle">${elemento.Título}</h3>
+		<h4 class="item-price shoppingCartItemPrice">$ ${elemento.Texto}</h4>
 		<div class="item-details">
-	   <h4 class="item-price">${elemento.Texto}</h4>
-	   <button class="item-button btn btn-warning addToCart">AÑADIR AL CARRITO</button>
-	   <button type="button" class="btn btn-danger" onclick="borrar(${index})">X</button>
+	   <button type="button" class="btn btn-danger" onclick="borrar(${index})"><i class="fas fa-times"></i></button>
 	   </div>
 	   </div>
 	   </div>
-	   <div class="col-4">
-		   <div
-			   class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
-			   <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number" value="1">
-			   
-		   </div>
-	   </div>
+   </div>
    </div>
 `
 	})};
-
+recorrer();
 
 
 

@@ -1,110 +1,254 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling movies</title>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-    crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style3.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/proyectogrupal.css">
+    <link rel="stylesheet" href="../css/estilosVistaPelicula.css">
     <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/estilosVistaAdministrador.css">
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-    
-  <title>Hello, world!</title>
+<link rel="stylesheet" href="../css/estilosVistaAdministrador.css">
+    <link rel="stylesheet" href="../css/style3.css">
 </head>
 
-<body>
-  <nav>
-    <div class="logo"><img class="logo-nav" src="../img/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png" alt=""> Rolling Movies</div>
-    <label for="btn" class="icon">
-      <span class="fa fa-bars"></span>
-    </label>
-    <input type="checkbox" id="btn">
-    <ul>
-      <li><a href="./index.html">Home</a></li>
-      <li>
-        <label for="btn-1" class="show">Features +</label>
-        <a href="./vistaAdministrador.html">Peliculas</a>
-        <input type="checkbox" id="btn-1">
+<body class="body">
+    <nav>
+        <div class="logo"><img class="logo-nav" src="../img/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png" alt=""> Rolling Movies</div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
         <ul>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Elements</a></li>
-          <li><a href="#">Icons</a></li>
-        </ul>
-      </li>
-      <li>
-        <label for="btn-2" class="show">Services +</label>
-        <a href="#">Services</a>
-        <input type="checkbox" id="btn-2">
-        <ul>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">App Design</a></li>
-          <li>
-            <label for="btn-3" class="show">More +</label>
-            <a href="#">More <span class="fa fa-plus"></span></a>
-            <input type="checkbox" id="btn-3">
-            <ul>
-              <li><a href="#">Submenu-1</a></li>
-              <li><a href="#">Submenu-2</a></li>
-              <li><a href="#">Submenu-3</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section>
-      <div class="my-5 d-flex justify-content-center">
-        <input class="ms-5 input-vista-adm" type="text">
-        <button type="button" class="btn btn-warning ms-2"><i class="fas fa-search"></i></button>
-        <button type="button" class="btn btn-warning ms-2"><i class="fas fa-plus busqueda"></i></button>
-      </div>
-    </section>
-    <section class="">
-      <ul class="">
-        <li class="mx-md-5">
-          <div class=" d-flex ms-1 mb-3 justify-content-md-between">
-            <img class="imagenLista" src="../img/ryf.jpg" alt="">
-            <div class="me-3">
-              <p>Rapidos y Furiosos 9</p>
-              <p>$$$</p>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">Features +</label>
+                <a href="./vistaAdministrador.html">Peliculas</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Elements</a></li>
+                    <li><a href="#">Icons</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">Services</label>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+<!-- SECCION CARRITO -->
+    <section class="shopping-cart bg-dark">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
             </div>
-            <div class=" d-flex">
-              <button type="button" class="btn btn-warning boton me-1"><i class="fas fa-pencil-alt"></i></button>
-              <button type="button" class="btn btn-warning boton"><i class="fas fa-trash"></i></button>
+            <!-- ? ITEMS DEL CARRITO -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
             </div>
-          </div>
-        </li>
-        
-      </ul>
+            <!-- ? FIN ITEMS DEL CARRITO -->
+
+            <!-- TOTAL -->
+            <div class="row ">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIN TOTAL -->
+
+            <!-- COMIENZO MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header bg-dark text-white">
+                            <h5 class="modal-title bg-dark text-white" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-white bg-dark">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning text-white" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN MODAL COMPRA -->
+        </div>
+    
     </section>
+    <!-- FIN CARRITO -->
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Ingresar</a></li>
+            <li><a href="../html/prueba.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- seccion agregar pelicula -->
+        <!-- Grid de bootstrap -->
+        <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-3 d-flex justify-content-end mt-5">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn btn-warning text-white" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-plus"></i>
+                </button>
+      
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <!-- Cuerpo del modal -->
+                      <div class="modal-body">
+                        <!-- Formulario -->
+                        <form id="formulario">
+                          <!-- Input del título -->
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Título</span>
+                            </div>
+                            <input id="titulo" type="text" required placeholder="Title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                          <!-- Input del cuerpo o texto de la noticia -->
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">precio</span>
+                            </div>
+                            <input id="texto" class="form-control" type="number">
+                          </div><br>
+                          <!--Input de la imágen  -->
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Imagen</span>
+                            </div>
+      
+                            <input id="imagen" type="text" required placeholder="Linnk de una imagen" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                          
+      
+                        </form>  
+                        <!-- Final del formulario -->
+                      </div>
+                      <!-- Footer del modal, aquí están los botones -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="agregar()">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+    <section class="container">
+        <div id="filas" class=" d-flex flex-wrap">
+
+        </div> 
+
+    </section>
+
     <section>
-      <div>
-          <span class="ir-arriba icon-arrow-up2"><i class="fas fa-angle-up"></i></span>
-      </div>
-  </section>
+        <div>
+            <span class="ir-arriba icon-arrow-up2"><i class="fas fa-angle-up"></i></span>
+        </div>
+    </section>
+    <footer class="container py-4">
+        <section class="row p-4">
+            <div class="col-12 col-md-4">
+                <p>Seguinos!</p>
+                <a href="" class="redes"><i class="fab fa-facebook-square"></i></a>
+                <a href="" class="redes"><i class="fab fa-google-plus-g"></i></a>
+                <a href="" class="redes"><i class="fab fa-instagram"></i></a>
+                <a href="" class="redes"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="col-12 col-md-4 bottom-0">
+                <p>Copyright 1999-2021. All Rights Reserved.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p>Contactanos!</p>
+                <form action="">
+                    <div class="">
+                        <label for="email" class="col-form-label">Email</label>
+                        <input required type="email" class="form-control" id="email">
+                    </div>
+                    <div class="">
+                        <label for="message-text" class="col-form-label">Mensaje</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                        <br>
+                        <button type="submit" class="btn btn-warning text-white">Enviar</button>
+                    </div>
+                </form>
+            </div>            
+        </section>
+    </footer>
 
-
-
-  </main>
-
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../js/navbar.js"></script>
+        <script src="../js/proyectogrupal.js"></script>
+        <script src="../js/prueba.js"></script>
+        <script src="../js/tienda.js"></script>
+    <script src="../js/botonUp.js"></script>
 </body>
 
 </html>

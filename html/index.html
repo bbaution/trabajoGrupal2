@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rolling movies</title>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="file:///E:/jquery.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <script src="file:///E:/jquery.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png" type="image/x-icon">
@@ -27,569 +26,120 @@
 
 <body class="body">
     <nav>
-        <div class="logo"><img class="logo-nav" src="../img/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png" alt=""> Rolling Movies</div>
+        <div class="logo d-flex align-content-center">
+            <img class="logo-nav my-1 my-lg-0" src="../img/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png"alt="">
+            <p class="rolling">RollingMovies</p>
+        </div>
         <label for="btn" class="icon">
             <span class="fa fa-bars"></span>
         </label>
         <input type="checkbox" id="btn">
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li>
-                <label for="btn-1" class="show">Features +</label>
-                <a href="./vistaAdministrador.html">Peliculas</a>
-                <input type="checkbox" id="btn-1">
-                <ul>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Elements</a></li>
-                    <li><a href="#">Icons</a></li>
-                </ul>
-            </li>
-            <li>
-                <label for="btn-2" class="show">Services +</label>
-                <a href="./ryf9.html">Services</a>
+            <li><a href="./vistaAdministrador.html">Admin</a></li>
+            <li class="boton-carrito">
+                <label for="btn-2" class="show"><i class="fas fa-shopping-cart"></i></label>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
                 <input type="checkbox" id="btn-2">
                 <ul>
                     <!-- START SECTION SHOPPING CART -->
-    <section class="shopping-cart bg-dark">
-        <div class="container">
-            <h1 class="text-center">CARRITO</h1>
-            <hr>
-            <div class="row">
-                <div class="col-6">
-                    <div class="shopping-cart-header">
-                        <h6>Producto</h6>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="shopping-cart-header">
-                        <h6 class="text-truncate">Precio</h6>
-                    </div>
-                </div>
-            </div>
-            <!-- ? START SHOPPING CART ITEMS -->
-            <div class="shopping-cart-items shoppingCartItemsContainer">
-            </div>
-            <!-- ? END SHOPPING CART ITEMS -->
-
-            <!-- START TOTAL -->
-            <div class="row ">
-                <div class="col-12">
-                    <div class="shopping-cart-total d-flex align-items-center">
-                        <p class="mb-0">Total</p>
-                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
-                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                            data-delay="2000">
-                            <div class="toast-header">
-                                <span>✅</span>
-                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
-                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                    <section class="shopping-cart shopping-carts">
+                        <div class="container">
+                            <h1 class="text-center">CARRITO</h1>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="shopping-cart-header">
+                                        <h6>Producto</h6>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="shopping-cart-header">
+                                        <h6 class="text-truncate">Precio</h6>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="shopping-cart-header">
+                                        <h6>Cantidad</h6>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="toast-body text-white">
-                                Se aumentó correctamente la cantidad
+                            <!-- ? START SHOPPING CART ITEMS -->
+                            <div class="shopping-cart-items shoppingCartItemsContainer">
                             </div>
+                            <!-- ? END SHOPPING CART ITEMS -->
+
+                            <!-- START TOTAL -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="shopping-cart-total d-flex align-items-center">
+                                        <p class="mb-0">Total</p>
+                                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive"
+                                            aria-atomic="true" data-delay="2000">
+                                            <div class="toast-header">
+                                                <span>✅</span>
+                                                <strong class="mr-auto ml-1 text-secondary">Elemento en el
+                                                    carrito</strong>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="toast-body text-white">
+                                                Se aumentó correctamente la cantidad
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-success ml-auto comprarButton" type="button"
+                                            data-toggle="modal" data-target="#comprarModal">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- END TOTAL -->
+
+                            <!-- START MODAL COMPRA -->
+                            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Pronto recibirá su pedido</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END MODAL COMPRA -->
+
+
                         </div>
-                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                            data-target="#comprarModal">Comprar</button>
-                    </div>
-                </div>
-            </div>
 
-            <!-- END TOTAL -->
-
-            <!-- START MODAL COMPRA -->
-            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Pronto recibirá su pedido</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- END MODAL COMPRA -->
-
-
-        </div>
-
-    </section>
-    <!-- END SECTION SHOPPING CART -->
-                    </li>
-                </ul>
+                    </section>
+                    <!-- FIN CARRITO -->
             </li>
-            <li><a href="#">Ingresar</a></li>
-            <li><a href="../html/prueba.html">Contact</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Ingresar</a></li>
         </ul>
     </nav>
-
-
-    <!-- Slideshow container -->
-    <div class="slideshow-container carrusel">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="imagenes">
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="../img/pelis1.jpeg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-                <img src="../img/pelis2.jpeg" style="width:100%;">
-
-            </div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div>
+        <img src="../img/pelis1.jpeg" style="width:100%">
     </div>
-    <br>
+   
+    <section class="container d-flex justify-content-center d-lg-block">
+        <container id="filas" class=" d-lg-flex">
 
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
-
-    <!-- seccion agregar pelicula -->
-        <!-- Grid de bootstrap -->
-        <div class="container">
-            <div class="row justify-content-end">
-              <div class="col-3 d-flex justify-content-end mt-5">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn btn-warning text-white" data-toggle="modal" data-target="#exampleModal">
-                    <i class="fas fa-plus"></i>
-                </button>
-      
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <!-- Cuerpo del modal -->
-                      <div class="modal-body">
-                        <!-- Formulario -->
-                        <form id="formulario">
-                          <!-- Input del título -->
-                          <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="inputGroup-sizing-default">Título</span>
-                            </div>
-                            <input id="titulo" type="text" required placeholder="Title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                          </div>
-                          <!-- Input del cuerpo o texto de la noticia -->
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">precio</span>
-                            </div>
-                            <input id="texto" class="form-control" type="number">
-                          </div><br>
-                          <!--Input de la imágen  -->
-                          <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="inputGroup-sizing-default">Imagen</span>
-                            </div>
-      
-                            <input id="imagen" type="text" required placeholder="Linnk de una imagen" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                          </div>
-                          
-      
-                        </form>  
-                        <!-- Final del formulario -->
-                      </div>
-                      <!-- Footer del modal, aquí están los botones -->
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="agregar()">Agregar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-    <section class="container">
-        <container id="filas">
-
-        </container> 
-        <!-- <h2>Acción</h2>
-        <div class="row">
-            <div class=" col-12 col-md-4 item shadow mb-4">
-                <div class="tituloCard item-title">
-                    <h3>Rapidos y Furiosos 9</h3>
-                </div>
-                <img src="../img/ryf.jpg" class=" item-image card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning item-button addToCart" data-bs-toggle="modal" data-bs-target="#fastModal">>$600</a>
-                    </button>
-                </div> -->
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="item shadow mb-4">
-                    <h3 class="item-title">Rapidos y furiosos 9</h3>
-                    <img class="item-image" src="../img/ryf.jpg">
-
-                    <div class="item-details">
-                        <h4 class="item-price">9.99€</h4>
-                        <button class="item-button btn btn-warning addToCart">AÑADIR AL CARRITO</button>
-                    </div>
-                </div>
-            </div> 
-        
-            <!-- <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Despierta la Furia</h3>
-                </div>
-                <img src="../img/despierta la furia.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#fastModal">
-                        $610
-                    </button>
-                </div>
-            </div>
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>La Purga</h3>
-                </div>
-                <div class="">
-                    <img src="../img/la+purga.jpeg" class="card-img-top imagenCard" alt="...">
-                    <div class="card-body">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                            data-bs-target="#thePurgeModal">
-                            $680
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div> <br>
-    </section>
-
-    <section class="container">
-        <h2>Terror</h2>
-        <div class="row">
-            <div class="col-12 col-md-4 ">
-                <div class="tituloCard">
-                    <h3>El Conjuro</h3>
-                </div>
-                <div class=" ">
-                    <img src="../img/conjuro.jpg" class="card-img-top imagenCard" alt="...">
-                    <div class="card-body">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                            data-bs-target="#thePurgeModal">
-                            $699
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>La calle del terror</h3>
-                </div>
-                <img src="../img/La calle del telol.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#thePurgeModal">
-                        $670
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Ruega por nosotros</h3>
-                </div>
-                <img src="../img/ruega por nosotros.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#thePurgeModal">
-                        $550
-                    </button>
-                </div>
-            </div>
-
-        </div> <br>
-    </section>
-    <section class="container">
-        <h2>Comic</h2>
-        <div class="row">
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Wonder Woman</h3>
-                </div>
-                <img src="../img/wonder woman.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#thePurgeModal">
-                        $520
-                    </button>
-                </div>
-            </div>
-
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Black Widow</h3>
-                </div>
-                <img src="../img/black widow.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Batman</h3>
-                </div>
-                <img src="../img/batman.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#thePurgeModal">
-                        $520
-                    </button>
-                </div>
-            </div>
-        </div>
-        <br>
-    </section>
-    <section class="container">
-        <h2>Anime</h2>
-        <div class="row">
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Dragon Ball Z</h3>
-                </div>
-                <img src="../img/dbz.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Dragon Ball Z Broly</h3>
-                </div>
-                <img src="../img/dbz broly.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Batalla de los Dioses</h3>
-                </div>
-                <img src="../img/dbz batalla de los dioses.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-        </div> <br>
-    </section>
-
-    <section class="container">
-        <h2>Comedia</h2>
-        <div class="row">
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Space Jam</h3>
-                </div>
-                <img src="../img/space jam.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>American Pie</h3>
-                </div>
-                <img src="../img/american pie.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Firends</h3>
-                </div>
-                <img src="../img/friend.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-        </div> <br>
-    </section>
-
-    <section class="container">
-        <h2>Biografias</h2>
-        <div class="row">
-            <div class="c col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Maradona</h3>
-                </div>
-                <img src="../img/maradona.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Los 2 Papas</h3>
-                </div>
-                <img src="../img/los 2 papas.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Tony Parker</h3>
-                </div>
-                <img src="../img/tony.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-        </div> <br>
-    </section>
-
-    <section class="container">
-        <h2>Bélico</h2>
-        <div class="row">
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Hasta el Ultimo Hombre</h3>
-                </div>
-                <img src="../img/hasta el ultimo hombre.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>AK-47</h3>
-                </div>
-                <img src="../img/ak 47.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>The Great War</h3>
-                </div>
-                <img src="../img/The great war.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-        </div> <br>
-    </section>
-
-    <section class="container">
-        <h2>Ciencia Ficción</h2>
-        <div class="row">
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Volver al Futuro</h3>
-                </div>
-                <img src="../img/volver al futuro.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Matrix</h3>
-                </div>
-                <img src="../img/matrix.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-
-            <div class=" col-12 col-md-4">
-                <div class="tituloCard">
-                    <h3>Godzilla vs Kong</h3>
-                </div>
-                <img src="../img/kong.jpg" class="card-img-top imagenCard" alt="...">
-                <div class="card-body">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                        data-bs-target="#blackWidowModal">
-                        $720
-                    </button>
-                </div>
-            </div>
-        </div> -->
+        </container>
     </section>
 
     <section>
@@ -623,7 +173,7 @@
                         <button type="submit" class="btn btn-warning text-white">Enviar</button>
                     </div>
                 </form>
-            </div>            
+            </div>
         </section>
     </footer>
 
@@ -636,14 +186,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="../js/tienda.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/proyectogrupal.js"></script>
     <script src="../js/prueba.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/tienda.js"></script>
     <script src="../js/botonUp.js"></script>
 </body>
 
