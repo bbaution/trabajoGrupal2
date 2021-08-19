@@ -89,16 +89,10 @@ function updateShoppingCartTotal() {
     const shoppingCartItemPrice = Number(
       shoppingCartItemPriceElement.textContent.replace('$', '')
     );
-    const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
-      '.shoppingCartItemQuantity'
-    );
-    const shoppingCartItemQuantity = Number(
-      shoppingCartItemQuantityElement.value
-    );
-    total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
+    total = total + shoppingCartItemPrice 
   });
   shoppingCartTotal.innerHTML = `${total.toFixed(2)}$`;
-
+ 
 }
 
 function removeShoppingCartItem(event) {

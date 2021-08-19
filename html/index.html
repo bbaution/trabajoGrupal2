@@ -26,7 +26,7 @@
 
 <body class="body">
     <nav>
-        <div class="logo d-flex align-content-center">
+        <div class="logo d-flex ms-3 mt-md-3">
             <img class="logo-nav my-1 my-lg-0" src="../img/Rolling_Stones-logo-F0BC01DFC6-seeklogo.com.png"alt="">
             <p class="rolling">RollingMovies</p>
         </div>
@@ -36,13 +36,12 @@
         <input type="checkbox" id="btn">
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./vistaAdministrador.html">Admin</a></li>
+             <li><a href="./login.html">Admin</a></li> 
             <li class="boton-carrito">
                 <label for="btn-2" class="show"><i class="fas fa-shopping-cart"></i></label>
-                <a href=""><i class="fas fa-shopping-cart"></i></a>
-                <input type="checkbox" id="btn-2">
+                <a><i class="fas fa-shopping-cart"></i></a> 
                 <ul>
-                    <!-- START SECTION SHOPPING CART -->
+                    <!-- COMIENZA SECCION SHOPPING CARRITO -->
                     <section class="shopping-cart shopping-carts">
                         <div class="container">
                             <h1 class="text-center">CARRITO</h1>
@@ -64,12 +63,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- ? START SHOPPING CART ITEMS -->
+                            <!-- ? COMIENZA SHOPPING CARRITO -->
                             <div class="shopping-cart-items shoppingCartItemsContainer">
                             </div>
-                            <!-- ? END SHOPPING CART ITEMS -->
+                            <!-- ? FIN SHOPPING CARRITO -->
 
-                            <!-- START TOTAL -->
+                            <!-- COMIENZA TOTAL -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="shopping-cart-total d-flex align-items-center">
@@ -95,51 +94,61 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- END TOTAL -->
-
+                            <!-- FIN TOTAL -->
                             <!-- START MODAL COMPRA -->
-                            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                            <div class="modal fade top-0" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
-                                        <div class="modal-header">
+                                        <div class="modal-header bg-dark">
                                             <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <button type="button" class=" btn-close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body">
-                                            <p>Pronto recibirá su pedido</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Cerrar</button>
+                                        <div class="modal-body bg-dark">
+                                            <form class="formularioTarjeta m-5">
+                                                <div class=" input input-group mb-3">
+                                                    <input type="number" required class="form-control text-light bg-dark"
+                                                        placeholder="Numero de la Tarjeta">
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" required class="form-control text-light bg-dark"
+                                                        placeholder="Nombre en la Tarjeta">
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <input type="month" required class="form-control text-light bg-dark"
+                                                        placeholder="Fecha de Vencimiento">
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <input type="number" required class="form-control text-light bg-dark" placeholder="CVV">
+                                                </div>
+                                                <div class="bg-dark">
+                                                    <button type="submit" required class="btn btn-warning text-light boton">Comprar </button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- END MODAL COMPRA -->
-
-
                         </div>
-
                     </section>
                     <!-- FIN CARRITO -->
             </li>
         </ul>
         </li>
-        <li><a href="#">Ingresar</a></li>
         </ul>
     </nav>
     <div>
         <img src="../img/pelis1.jpeg" style="width:100%">
     </div>
-   
-    <section class="container d-flex justify-content-center d-lg-block">
-        <container id="filas" class=" d-lg-flex">
+    
+    <div class="">
+        <div id="filas" class="container-fluid d-flex flex-wrap justify-content-between">
 
-        </container>
+        </div>
+    </div>
     </section>
 
     <section>
@@ -158,6 +167,7 @@
             </div>
             <div class="col-12 col-md-4 bottom-0">
                 <p>Copyright 1999-2021. All Rights Reserved.</p>
+                <p>La Cosa Nostra <i class="fas fa-user-secret"></i></p>
             </div>
             <div class="col-12 col-md-4">
                 <p>Contactanos!</p>

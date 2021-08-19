@@ -57,6 +57,7 @@ input{
     
 }
 
+
 .input-vista-adm{
     display: block;
 }
@@ -79,7 +80,7 @@ height: 60px;
     background: rgb(19, 18, 18);
     position: absolute;
     top: 100%;
-    
+    display: none;
 }
 
 .imgCarrito{
@@ -98,9 +99,22 @@ height: 60px;
     display: none;
 }
 
+.carrito{
+    max-width: 375px;
+    display: block;
+}
+
+.loginFondo{
+    background-image: url(../img/por-que-se-comen-palomitas-en-el-cine-en-vez-de-otros-039-snacks-039.jpg);
+}
+
 @media screen and (min-width: 426px) {
-    .shopping-cart{
-        left: -450px;}
+    .carrito{
+        display: none;
+    }
+    .shopping-carts{
+        display: block;
+        left: -554px;}
     .rolling{
         display: block;
     }
