@@ -1,25 +1,25 @@
-const peliculasJson = localStorage.getItem('peliculas'); // Traer de localStorage el dato asociado a la key "usuarios".
-let pelicula = JSON.parse(peliculasJson) || []; // Convertir datos en formato JSON a código JavaScript.
-
-//Esta función agregar pelicula
+const peliculasJson = localStorage.getItem('peliculas');
+let pelicula = JSON.parse(peliculasJson) || []; 
 function agregar(){
 	let datosPeliculas = {
 		Título : document.getElementById('titulo').value,
 		Texto : document.getElementById('texto').value,
 		Img : document.getElementById('imagen').value,
 		Publicación : false,
-	};	
+	};
+	
 	document.getElementById('formulario').reset();
+
 	pelicula.push(datosPeliculas);
+
 	recorrer();
 	
-	const peliculasJson = JSON.stringify(pelicula); // Convertir datos al formato JSON.
-    localStorage.setItem('peliculas', peliculasJson); // Guardar en localStorage.
+	const peliculasJson = JSON.stringify(pelicula);
+    localStorage.setItem('peliculas', peliculasJson); 
 }
 
 let fila = document.getElementById('filas');
 
-//función que recorre usando el forEach.
 function recorrer(){
 	fila.innerHTML='';
 
@@ -42,13 +42,13 @@ function recorrer(){
 	})};
 recorrer();
 
-//La función borrar 
 	function borrar(indice){
+
 		pelicula.splice(indice,1);
 
 		fila.innerHTML = '';
-//función recorrer para mostrar en el html sin el elemento que se borró.
+	
 		recorrer();
+
 	}
 
-	

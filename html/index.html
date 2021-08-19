@@ -19,9 +19,7 @@
     <link rel="stylesheet" href="../css/proyectogrupal.css">
     <link rel="stylesheet" href="../css/estilosVistaPelicula.css">
     <link rel="stylesheet" href="../css/style.css">
-
-
-    <link rel="stylesheet" href="../css/style3.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 
 <body class="body">
@@ -95,43 +93,7 @@
                                 </div>
                             </div>
                             <!-- FIN TOTAL -->
-                            <!-- START MODAL COMPRA -->
-                            <div class="modal fade top-0" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-dark">
-                                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
-                                            <button type="button" class=" btn-close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body bg-dark">
-                                            <form class="formularioTarjeta m-5">
-                                                <div class=" input input-group mb-3">
-                                                    <input type="number" required class="form-control text-light bg-dark"
-                                                        placeholder="Numero de la Tarjeta">
-                                                </div>
-                                                <div class="input-group mb-3">
-                                                    <input type="text" required class="form-control text-light bg-dark"
-                                                        placeholder="Nombre en la Tarjeta">
-                                                </div>
-                                                <div class="input-group mb-3">
-                                                    <input type="month" required class="form-control text-light bg-dark"
-                                                        placeholder="Fecha de Vencimiento">
-                                                </div>
-                                                <div class="input-group mb-3">
-                                                    <input type="number" required class="form-control text-light bg-dark" placeholder="CVV">
-                                                </div>
-                                                <div class="bg-dark">
-                                                    <button type="submit" required class="btn btn-warning text-light boton">Comprar </button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END MODAL COMPRA -->
+                            
                         </div>
                     </section>
                     <!-- FIN CARRITO -->
@@ -144,18 +106,56 @@
         <img src="../img/pelis1.jpeg" style="width:100%">
     </div>
     
+    <!--cards-->
     <div class="">
         <div id="filas" class="container-fluid d-flex flex-wrap justify-content-between">
 
         </div>
     </div>
     </section>
-
+<!--boton arriba-->
     <section>
         <div>
             <span class="ir-arriba icon-arrow-up2"><i class="fas fa-angle-up"></i></span>
         </div>
     </section>
+    <!-- START MODAL COMPRA -->
+    <div class="modal fade top-0" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                <button type="button" class=" btn-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body bg-dark">
+                <form class="formularioTarjeta m-5">
+                    <div class=" input input-group mb-3">
+                        <input type="number" required class="form-control text-light bg-dark"
+                            placeholder="Numero de la Tarjeta">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" required class="form-control text-light bg-dark"
+                            placeholder="Nombre en la Tarjeta">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="month" required class="form-control text-light bg-dark"
+                            placeholder="Fecha de Vencimiento">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="number" required class="form-control text-light bg-dark" placeholder="CVV">
+                    </div>
+                    <div class="bg-dark">
+                        <button type="submit" required class="btn btn-warning text-light boton">Comprar </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL COMPRA -->
     <footer class="container py-4">
         <section class="row p-4">
             <div class="col-12 col-md-4">
